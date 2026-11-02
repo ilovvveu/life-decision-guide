@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="普通人可以使用的中文生活决策手册，包含消费、时间、学习、工作与共同生活的情境、方法、算例和模板。">
+  <title>普通人生活决策手册</title>
+  <link rel="stylesheet" href="vendor/vue.css">
+  <style>
+    :root { --theme-color: #176c65; }
+    body { color: #26332f; }
+    .markdown-section { max-width: 860px; font-size: 17px; line-height: 1.9; }
+    .markdown-section h1 { line-height: 1.35; }
+    .markdown-section table { display: block; overflow-x: auto; }
+    .markdown-section blockquote { color: #455c54; }
+    .sidebar-nav { line-height: 1.7; }
+    .sidebar-nav a { white-space: normal; }
+    @media(max-width: 768px) {
+      .markdown-section { padding: 24px 22px 60px; font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="app">正在打开手册。也可以直接在 GitHub 阅读 README.md。</div>
+  <script>
+    window.$docsify = {
+      name: '普通人生活决策手册',
+      repo: 'https://github.com/ilovvveu/life-decision-guide',
+      homepage: 'README.md',
+      loadSidebar: true,
+      relativePath: true,
+      noCompileLinks: ['LICENSE(?:-CODE)?$'],
+      auto2top: true,
+      subMaxLevel: 2,
+      alias: { '/.*/_sidebar.md': '/_sidebar.md' },
+      search: {
+        paths: 'auto',
+        placeholder: '搜索生活问题或方法',
+        noData: '没有找到，请换一个词试试',
+        depth: 3
+      }
+    };
+  </script>
+  <script src="vendor/docsify.min.js"></script>
+  <script src="vendor/search.min.js"></script>
+</body>
+</html>

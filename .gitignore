@@ -1,0 +1,7 @@
+.DS_Store
+.obsidian/
+__pycache__/
+*.pyc
+work/
+*.log
+个人记录/
