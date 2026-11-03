@@ -1,0 +1,21 @@
+.guide-search { margin: 0 16px 22px; padding-bottom: 16px; border-bottom: 1px solid #dbe5e1; }
+.guide-search h2 { margin: 4px 0 10px; font-size: 16px; color: #344b42; }
+.guide-search input { width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid #a8beb4; border-radius: 6px; font-size: 15px; background: #fff; color: #26332f; }
+.guide-filter { display: flex; align-items: center; gap: 8px; margin-top: 8px; font-size: 14px; }
+.guide-filter span { flex: 0 0 32px; }
+.guide-filter select { width: 100%; min-width: 0; padding: 6px; border: 1px solid #c9d8d1; border-radius: 4px; background: #fff; color: #26332f; font-size: 14px; }
+.guide-search-actions { display: flex; align-items: center; gap: 14px; margin-top: 10px; font-size: 13px; }
+.guide-search-actions a { color: #176c65; text-decoration: underline; }
+.guide-search-actions button { margin-left: auto; border: 1px solid #c9d8d1; background: #f3f7f5; color: #344b42; border-radius: 4px; cursor: pointer; padding: 4px 8px; }
+.guide-status { margin: 10px 0 0; color: #52675c; font-size: 13px; line-height: 1.6; }
+.guide-results { list-style: none; margin: 8px 0 0; padding: 0; max-height: 46vh; overflow-y: auto; }
+.guide-result { margin: 0; padding: 10px 0; border-top: 1px solid #e5ece8; }
+.guide-result a { display: block; font-weight: 600; font-size: 14px; line-height: 1.6; color: #176c65; text-decoration: none; white-space: normal; }
+.guide-result a:hover { text-decoration: underline; }
+.guide-result small { display: block; color: #52675c; font-size: 12px; margin-top: 3px; }
+.guide-result p { font-size: 12px; line-height: 1.7; color: #53665d; margin: 3px 0 0; overflow-wrap: anywhere; }
+.guide-tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 14px 0 24px; }
+.markdown-section .guide-tag { padding: 3px 10px; background: #edf5f1; color: #176c65; border: 1px solid #cfdfd6; border-radius: 16px; font-size: 13px; text-decoration: none; font-weight: 400; }
+.markdown-section .guide-tag:hover { background: #deeee6; text-decoration: underline; }
+.guide-search :focus-visible, .guide-tags :focus-visible { outline: 2px solid #176c65; outline-offset: 3px; }
+@media(max-width:768px) { .guide-results { max-height: 42vh; } .guide-search input { font-size: 16px; } }

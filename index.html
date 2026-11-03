@@ -6,6 +6,7 @@
   <meta name="description" content="普通人可以使用的中文生活决策手册，包含消费、时间、学习、工作与共同生活的情境、方法、算例和模板。">
   <title>普通人生活决策手册</title>
   <link rel="stylesheet" href="vendor/vue.css">
+  <link rel="stylesheet" href="assets/guide.css?v=1.1.0">
   <style>
     :root { --theme-color: #176c65; }
     body { color: #26332f; }
@@ -33,15 +34,10 @@
       auto2top: true,
       subMaxLevel: 2,
       alias: { '/.*/_sidebar.md': '/_sidebar.md' },
-      search: {
-        paths: 'auto',
-        placeholder: '搜索生活问题或方法',
-        noData: '没有找到，请换一个词试试',
-        depth: 3
-      }
+      // Search and tag navigation are provided by the local guide plugin.
     };
   </script>
+  <script src="assets/guide.js?v=1.1.0"></script>
   <script src="vendor/docsify.min.js"></script>
-  <script src="vendor/search.min.js"></script>
 </body>
 </html>
