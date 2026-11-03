@@ -76,7 +76,7 @@
         });
         h1.after(nav);
         Array.from(article.querySelectorAll('p')).forEach(function (p) {
-          if (p.textContent.startsWith('标签：#场景/')) p.hidden = true;
+          if (/^标签：\s*#场景\//.test(p.textContent)) p.hidden = true;
         });
       }
       function mount() {

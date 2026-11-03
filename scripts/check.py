@@ -57,6 +57,7 @@ if len(meta_paths) != len(set(meta_paths)) or set(meta_paths) != article_paths:
 ids = [a['id'] for a in catalog['articles']]
 if len(ids) != len(set(ids)): errors.append('duplicate catalog ids')
 for a in catalog['articles']:
+    if not re.search(r'标签：[ \t]+#场景/', (ROOT/a['path']).read_text()): errors.append(f"{a['path']}: first Obsidian tag needs whitespace")
     for key in ['scene','theory','stage']:
         if not a[key] or len(a[key]) != len(set(a[key])) or not set(a[key]) <= set(catalog['vocabulary'][key]):
             errors.append(f"{a['path']}: invalid {key} tags")

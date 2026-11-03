@@ -22,7 +22,7 @@ def outputs():
         path=row['path'];original=(ROOT/path).read_text();body=META.sub('\n',original)
         first,rest=body.split('\n',1)
         tags=['#'+LABELS[k]+'/'+x for k in LABELS for x in row[k]]
-        meta='\n<!-- guide-meta:start -->\n标签：'+' '.join(tags)+'\n\n检索词：'+'、'.join(row['aliases'])+'\n<!-- guide-meta:end -->\n'
+        meta='\n<!-- guide-meta:start -->\n标签： '+' '.join(tags)+'\n\n检索词：'+'、'.join(row['aliases'])+'\n<!-- guide-meta:end -->\n'
         body=first+'\n'+meta+rest.lstrip('\n')
         out[path]=body
         entry={**row,'title':title(body),'group':Path(path).parent.name.split('-',1)[1]}
